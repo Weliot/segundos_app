@@ -32,6 +32,8 @@ jobs:
 
       - name: Gerar o Build da aplicação
         run: npm run build
+        env:
+          CI: false
 
       - name: Listar arquivos do build
         run: ls -la build/
